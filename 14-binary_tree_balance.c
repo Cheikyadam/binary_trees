@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <stdio.h>
 
 /**
  * max - maximum
@@ -45,9 +44,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 	hd = height(tree->right);
-	printf("hd ==== %d\n", hd);
 	hg = height(tree->left);
-	printf("hg ====== %d\n", hg);
 	return (hg - hd);
 
 }
